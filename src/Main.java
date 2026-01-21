@@ -17,7 +17,11 @@ public class Main {
         while (iterator.hasNext()) {
             System.out.println("Индекс = " + iterator.nextIndex() + ", Элемент = " + iterator.next());
         }
+        System.out.println();
 
-
+        System.out.println("Список итераторов в обратном направлении:");
+        while (iterator.hasPrevious()) {
+            System.out.println("Индекс = " + iterator.previousIndex() + ", Элемент = " + iterator.previous());
+        }
     }
 }
